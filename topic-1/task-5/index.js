@@ -6,11 +6,12 @@
  * */
 function kaprekarConstant(number){
     while(number != 6174){
-        const bigNumber = number.toString().split("").sort().reverse().join('');
-        const smallNumber =  number.toString().split("").sort().join('');
+        const bigNumber = number.toString().split('').sort().reverse().join('');
+        const smallNumber =  number.toString().split('').sort().join('');
         number = bigNumber - smallNumber
-        if (number<1000||number>9998)
+        if(number<1000||number>9998) {
             throw new Error('Условия функции не соблюдены');
+        }
     }
     return number;
 }

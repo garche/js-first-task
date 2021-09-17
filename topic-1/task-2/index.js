@@ -13,8 +13,8 @@
  */
  function calculateDoubleArray(array) {
  const resArray = [];
- for(let i = 0; i < array.length; i++){
-  if (array[i] === 0) {
+ for(let i = 0; i<array.length; i++){
+  if(array[i] === 0){
    break;
   }
   resArray.push(array[i]);
